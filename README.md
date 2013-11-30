@@ -1,6 +1,6 @@
 # logstash docset for dash
 
-This is a simple logstash docset for [dash](http://kapeli.com/dash).
+This is a simple [logstash](http://logstash.net) docset for [dash](http://kapeli.com/dash).
 
 ## Usage
 
