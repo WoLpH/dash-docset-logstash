@@ -18,7 +18,7 @@ To generate the docs yourself you have a few prerequisites:
 
 After that simply run the `generate.sh` command and you're done:
 
-  ./generate.sh
+    ./generate.sh
 
 ## License
 
