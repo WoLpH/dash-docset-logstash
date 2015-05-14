@@ -6,7 +6,7 @@ This is a simple [logstash](http://logstash.net) docset for [dash](http://kapeli
 
 Enter the following feed address:
 
-`dash-feed://https%3A%2F%2Fraw.github.com%2Falappe%2Fdash-docset-logstash%2Fmaster%2Flogstash.xml`
+[`dash-feed://https%3A%2F%2Fraw.github.com%2FWoLpH%2Fdash-docset-logstash%2Fmaster%2Flogstash.xml`](dash-feed://https%3A%2F%2Fraw.github.com%2FWoLpH%2Fdash-docset-logstash%2Fmaster%2Flogstash.xml)
 
 ## License
 

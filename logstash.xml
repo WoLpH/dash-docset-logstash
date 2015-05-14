@@ -1,4 +1,55 @@
-<entry>
-	<version>1.2.2</version>
-	<url>https://github.com/alappe/dash-docset-logstash/raw/master/releases/logstash-1.2.2.tgz</url>
-</entry>
+
+    <entry>
+        <version>1.2.0</version>
+	    <url>https://github.com/WoLpH/dash-docset-logstash/raw/master/releases/logstash-1.2.0.tgz</url>
+    </entry>
+
+    <entry>
+        <version>1.2.1</version>
+	    <url>https://github.com/WoLpH/dash-docset-logstash/raw/master/releases/logstash-1.2.1.tgz</url>
+    </entry>
+
+    <entry>
+        <version>1.2.2</version>
+	    <url>https://github.com/WoLpH/dash-docset-logstash/raw/master/releases/logstash-1.2.2.tgz</url>
+    </entry>
+
+    <entry>
+        <version>1.3.2</version>
+	    <url>https://github.com/WoLpH/dash-docset-logstash/raw/master/releases/logstash-1.3.2.tgz</url>
+    </entry>
+
+    <entry>
+        <version>1.3.3</version>
+	    <url>https://github.com/WoLpH/dash-docset-logstash/raw/master/releases/logstash-1.3.3.tgz</url>
+    </entry>
+
+    <entry>
+        <version>1.4.0</version>
+	    <url>https://github.com/WoLpH/dash-docset-logstash/raw/master/releases/logstash-1.4.0.tgz</url>
+    </entry>
+
+    <entry>
+        <version>1.4.0.beta1</version>
+	    <url>https://github.com/WoLpH/dash-docset-logstash/raw/master/releases/logstash-1.4.0.beta1.tgz</url>
+    </entry>
+
+    <entry>
+        <version>1.4.0.beta2</version>
+	    <url>https://github.com/WoLpH/dash-docset-logstash/raw/master/releases/logstash-1.4.0.beta2.tgz</url>
+    </entry>
+
+    <entry>
+        <version>1.4.0.rc1</version>
+	    <url>https://github.com/WoLpH/dash-docset-logstash/raw/master/releases/logstash-1.4.0.rc1.tgz</url>
+    </entry>
+
+    <entry>
+        <version>1.4.1</version>
+	    <url>https://github.com/WoLpH/dash-docset-logstash/raw/master/releases/logstash-1.4.1.tgz</url>
+    </entry>
+
+    <entry>
+        <version>1.4.2</version>
+	    <url>https://github.com/WoLpH/dash-docset-logstash/raw/master/releases/logstash-1.4.2.tgz</url>
+    </entry>
