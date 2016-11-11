@@ -8,6 +8,10 @@ Enter the following feed address:
 
 [`dash-feed://https%3A%2F%2Fraw.github.com%2FWoLpH%2Fdash-docset-logstash%2Fmaster%2Flogstash.xml`](dash-feed://https%3A%2F%2Fraw.github.com%2FWoLpH%2Fdash-docset-logstash%2Fmaster%2Flogstash.xml)
 
+Or the https version of the link:
+
+https://raw.githubusercontent.com/WoLpH/dash-docset-logstash/master/logstash.xml
+
 ## Generating
 
 To generate the docs yourself you have a few prerequisites:
