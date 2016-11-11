@@ -1,9 +1,5 @@
  <html>      <head>          <link rel='stylesheet' href='http://logstash.net/style.css'>     </head>      <body>          <div class='container' style='width:100%;padding:1em;'>              <div id='content_right'>                  <div class='content_wrapper'>  <h2>zeromq</h2>
 <h3>Milestone: <a href="../plugin-milestones">1</a></h3>
-<div class="community-plugin-notice">
-  <strong>This is a community-contributed plugin!</strong> It does not ship with logstash by default, but it is easy to install!
-  To use this, you must have <a href="../contrib-plugins">installed the contrib plugins package</a>.
-</div>
 
 <p>ZeroMQ filter. This is the best way to send an event externally for filtering
 It works much like an exec filter would by sending the event &#8220;offsite&#8221;
@@ -16,7 +12,7 @@ for processing and waiting for a response</p>
 
 <p>Note that this is a limited subset of the zeromq functionality in
 inputs and outputs. The only topology that makes sense here is:
-REQ/REP. </p>
+REQ/REP.</p>
 
 
 <h3> Synopsis </h3>
@@ -79,7 +75,7 @@ filter {
 <p>If the event has field &#8220;somefield&#8221; == &#8220;hello&#8221; this filter, on success,
 would add field &#8220;foo_hello&#8221; if it is present, with the
 value above and the %{host} piece replaced with that value from the
-event. The second example would also add a hardcoded field. </p>
+event. The second example would also add a hardcoded field.</p>
 
 
 <h4> 
@@ -272,7 +268,7 @@ filter {
 
 <p>If the event has field &#8220;somefield&#8221; == &#8220;hello&#8221; this filter, on success,
 would remove the tag &#8220;foo_hello&#8221; if it is present. The second example
-would remove a sad, unwanted tag as well. </p>
+would remove a sad, unwanted tag as well.</p>
 
 
 <h4> 
@@ -375,4 +371,4 @@ Optional.</p>
 
 <hr>
 
-This is documentation from <a href="https://github.com/logstash/logstash/blob/v1.4.2/lib/logstash/filters/zeromq.rb">lib/logstash/filters/zeromq.rb</a>                 <div class='clear'>                  </div>              </div>          </div>      </body>  </html> 
+This is documentation from <a href="https://github.com/logstash/logstash/blob/v1.4.5/lib/logstash/filters/zeromq.rb">lib/logstash/filters/zeromq.rb</a>                 <div class='clear'>                  </div>              </div>          </div>      </body>  </html> 

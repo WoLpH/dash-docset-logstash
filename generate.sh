@@ -11,7 +11,7 @@ if [ -d $LOGSTASH ]; then
     git clean -df
     cd $BASE
 else
-    git clone "git@github.com:logstash/logstash.net.git" $LOGSTASH
+    git clone "git@github.com:elastic/logstash.net.git" $LOGSTASH
 fi
 
 HEADER="
@@ -101,3 +101,5 @@ for VERSION in $(ls $LOGSTASH/docs | sort -n); do
     [ ! -f "releases/logstash-${VERSION}.tgz" ] && generate $VERSION
 done
 
+# Unpack the latest version to keep an unpacked version in the repo for ease of use
+tar xzf "releases/logstash-${VERSION}.tgz"

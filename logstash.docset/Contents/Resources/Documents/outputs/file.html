@@ -12,6 +12,7 @@ This is what it might look like in your config file:
 <pre><code>output {
   file {
     <a href="#codec">codec</a> => ... # codec (optional), default: "plain"
+    <a href="#filename_failure">filename_failure</a> => ... # string (optional), default: "_filepath_failures"
     <a href="#flush_interval">flush_interval</a> => ... # number (optional), default: 2
     <a href="#gzip">gzip</a> => ... # boolean (optional), default: false
     <a href="#max_size">max_size</a> => ... # string (optional)
@@ -56,6 +57,22 @@ This is what it might look like in your config file:
 
 
 <h4> 
+  <a name="filename_failure">
+    filename_failure
+    
+</a>
+</h4>
+
+<ul>
+  <li> Value type is <a href="../configuration#string">string</a> </li>
+  <li> Default value is "_filepath_failures" </li>
+</ul>
+
+<p>If the generated path is invalid, the events will be saved
+into this file and inside the defined path.</p>
+
+
+<h4> 
   <a name="flush_interval">
     flush_interval
     
@@ -67,7 +84,7 @@ This is what it might look like in your config file:
   <li> Default value is 2 </li>
 </ul>
 
-<p>Flush interval (in seconds) for flushing writes to log files. 
+<p>Flush interval (in seconds) for flushing writes to log files.
 0 will flush on every message.</p>
 
 
@@ -119,7 +136,7 @@ and so forth.</p>
 </ul>
 
 <p>The format to use when writing events to the file. This value
-supports any string and can include %{name} and other dynamic
+supports any string and can include <code>%{name}</code> and other dynamic
 strings.</p>
 
 <p>If this setting is omitted, the full json representation of the
@@ -138,13 +155,16 @@ event will be written as a single line.</p>
   <li> There is no default value for this setting. </li>
 </ul>
 
-<p>The path to the file to write. Event fields can be used here, 
-like &#8220;/var/log/logstash/%{host}/%{application}&#8221;
-One may also utilize the path option for date-based log 
+<p>The path to the file to write. Event fields can be used here,
+like <code>/var/log/logstash/%{host}/%{application}</code>
+One may also utilize the path option for date-based log
 rotation via the joda time format. This will use the event
 timestamp.
-E.g.: path =&gt; &#8220;./test-%{+YYYY-MM-dd}.txt&#8221; to create 
-./test-2013-05-29.txt </p>
+E.g.: <code>path =&gt; "./test-%{+YYYY-MM-dd}.txt"</code> to create
+<code>./test-2013-05-29.txt</code></p>
+
+<p>If you use an absolute path you cannot start with a dynamic string.
+E.g: <code>/%{myfield}/</code>, <code>/test-%{myfield}/</code> are not valid paths</p>
 
 
 <h4> 
@@ -203,4 +223,4 @@ Note that this setting may not be useful for all outputs.</p>
 
 <hr>
 
-This is documentation from <a href="https://github.com/logstash/logstash/blob/v1.4.2/lib/logstash/outputs/file.rb">lib/logstash/outputs/file.rb</a>                 <div class='clear'>                  </div>              </div>          </div>      </body>  </html> 
+This is documentation from <a href="https://github.com/logstash/logstash/blob/v1.4.5/lib/logstash/outputs/file.rb">lib/logstash/outputs/file.rb</a>                 <div class='clear'>                  </div>              </div>          </div>      </body>  </html> 

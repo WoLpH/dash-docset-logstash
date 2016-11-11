@@ -11,7 +11,7 @@ logs, and in general, any log format that is generally written for humans
 and not computer consumption.</p>
 
 <p>Logstash ships with about 120 patterns by default. You can find them here:
-<a href="https://github.com/logstash/logstash/tree/v1.4.2/patterns">https://github.com/logstash/logstash/tree/v1.4.2/patterns</a>. You can add
+<a href="https://github.com/logstash/logstash/tree/v1.4.5/patterns">https://github.com/logstash/logstash/tree/v1.4.5/patterns</a>. You can add
 your own trivially. (See the patterns_dir setting)</p>
 
 <p>If you need help building patterns to match your logs, you will find the
@@ -208,7 +208,7 @@ filter {
 <p>If the event has field &#8220;somefield&#8221; == &#8220;hello&#8221; this filter, on success,
 would add field &#8220;foo_hello&#8221; if it is present, with the
 value above and the %{host} piece replaced with that value from the
-event. The second example would also add a hardcoded field. </p>
+event. The second example would also add a hardcoded field.</p>
 
 
 <h4> 
@@ -500,7 +500,7 @@ filter {
 
 <p>If the event has field &#8220;somefield&#8221; == &#8220;hello&#8221; this filter, on success,
 would remove the tag &#8220;foo_hello&#8221; if it is present. The second example
-would remove a sad, unwanted tag as well. </p>
+would remove a sad, unwanted tag as well.</p>
 
 
 <h4> 
@@ -577,4 +577,4 @@ Optional.</p>
 
 <hr>
 
-This is documentation from <a href="https://github.com/logstash/logstash/blob/v1.4.2/lib/logstash/filters/grok.rb">lib/logstash/filters/grok.rb</a>                 <div class='clear'>                  </div>              </div>          </div>      </body>  </html> 
+This is documentation from <a href="https://github.com/logstash/logstash/blob/v1.4.5/lib/logstash/filters/grok.rb">lib/logstash/filters/grok.rb</a>                 <div class='clear'>                  </div>              </div>          </div>      </body>  </html> 

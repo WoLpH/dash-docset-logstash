@@ -1,9 +1,5 @@
  <html>      <head>          <link rel='stylesheet' href='http://logstash.net/style.css'>     </head>      <body>          <div class='container' style='width:100%;padding:1em;'>              <div id='content_right'>                  <div class='content_wrapper'>  <h2>graphtastic</h2>
 <h3>Milestone: <a href="../plugin-milestones">2</a></h3>
-<div class="community-plugin-notice">
-  <strong>This is a community-contributed plugin!</strong> It does not ship with logstash by default, but it is easy to install!
-  To use this, you must have <a href="../contrib-plugins">installed the contrib plugins package</a>.
-</div>
 
 <p>A plugin for a newly developed Java/Spring Metrics application
 I didn&#8217;t really want to code this project but I couldn&#8217;t find
@@ -13,7 +9,7 @@ and statsd.  This application provides multiple integration options
 so as to make its use under your network requirements possible. 
 This includes a REST option that is always enabled for your use
 in case you want to write a small script to send the occasional 
-metric data. </p>
+metric data.</p>
 
 <p>Find GraphTastic here : https://github.com/NickPadilla/GraphTastic</p>
 
@@ -53,7 +49,7 @@ This is what it might look like in your config file:
 </ul>
 
 <p>the number of metrics to send to GraphTastic at one time. 60 seems to be the perfect 
-amount for UDP, with default packet size. </p>
+amount for UDP, with default packet size.</p>
 
 
 <h4> 
@@ -170,7 +166,7 @@ NOT IMPLEMENTED!</p>
 <p>metrics hash - you will provide a name for your metric and the metric 
 data as key value pairs.  so for example:</p>
 
-<p>metrics =&gt; { &#8220;Response&#8221; =&gt; &#8220;%{response}&#8221; } </p>
+<p>metrics =&gt; { &#8220;Response&#8221; =&gt; &#8220;%{response}&#8221; }</p>
 
 <p>example for the logstash config</p>
 
@@ -209,7 +205,7 @@ data as key value pairs.  so for example:</p>
 <p>number of attempted retry after send error - currently only way to integrate
 errored transactions - should try and save to a file or later consumption
 either by graphtastic utility or by this program after connectivity is
-ensured to be established. </p>
+ensured to be established.</p>
 
 
 <h4> 
@@ -268,4 +264,4 @@ Note that this setting may not be useful for all outputs.</p>
 
 <hr>
 
-This is documentation from <a href="https://github.com/logstash/logstash/blob/v1.4.2/lib/logstash/outputs/graphtastic.rb">lib/logstash/outputs/graphtastic.rb</a>                 <div class='clear'>                  </div>              </div>          </div>      </body>  </html> 
+This is documentation from <a href="https://github.com/logstash/logstash/blob/v1.4.5/lib/logstash/outputs/graphtastic.rb">lib/logstash/outputs/graphtastic.rb</a>                 <div class='clear'>                  </div>              </div>          </div>      </body>  </html> 

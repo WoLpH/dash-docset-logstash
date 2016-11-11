@@ -13,6 +13,7 @@ This is what it might look like in your config file:
     <a href="#codec">codec</a> => ... # codec (optional), default: "plain"
     <a href="#csv_options">csv_options</a> => ... # hash (optional), default: {}
     <a href="#fields">fields</a> => ... # array (required)
+    <a href="#filename_failure">filename_failure</a> => ... # string (optional), default: "_filepath_failures"
     <a href="#flush_interval">flush_interval</a> => ... # number (optional), default: 2
     <a href="#gzip">gzip</a> => ... # boolean (optional), default: false
     <a href="#max_size">max_size</a> => ... # string (optional)
@@ -89,6 +90,20 @@ A typical use case would be to use alternative column or row seperators eg: <cod
 Fields are written to the CSV in the same order as the array.
 If a field does not exist on the event, an empty string will be written.
 Supports field reference syntax eg: <code>fields =&gt; ["field1", "[nested][field]"]</code>.</p>
+
+
+<h4> 
+  <a name="filename_failure">
+    filename_failure
+    
+</a>
+</h4>
+
+<ul>
+  <li> Value type is <a href="../configuration#string">string</a> </li>
+  <li> Default value is "_filepath_failures" </li>
+</ul>
+
 
 
 <h4> 
@@ -217,4 +232,4 @@ Note that this setting may not be useful for all outputs.</p>
 
 <hr>
 
-This is documentation from <a href="https://github.com/logstash/logstash/blob/v1.4.2/lib/logstash/outputs/csv.rb">lib/logstash/outputs/csv.rb</a>                 <div class='clear'>                  </div>              </div>          </div>      </body>  </html> 
+This is documentation from <a href="https://github.com/logstash/logstash/blob/v1.4.5/lib/logstash/outputs/csv.rb">lib/logstash/outputs/csv.rb</a>                 <div class='clear'>                  </div>              </div>          </div>      </body>  </html> 

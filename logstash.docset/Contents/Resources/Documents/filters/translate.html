@@ -1,9 +1,5 @@
  <html>      <head>          <link rel='stylesheet' href='http://logstash.net/style.css'>     </head>      <body>          <div class='container' style='width:100%;padding:1em;'>              <div id='content_right'>                  <div class='content_wrapper'>  <h2>translate</h2>
 <h3>Milestone: <a href="../plugin-milestones">1</a></h3>
-<div class="community-plugin-notice">
-  <strong>This is a community-contributed plugin!</strong> It does not ship with logstash by default, but it is easy to install!
-  To use this, you must have <a href="../contrib-plugins">installed the contrib plugins package</a>.
-</div>
 
 <p>A general search and replace tool which uses a configured hash
 and/or a YAML file to determine replacement values.</p>
@@ -90,7 +86,7 @@ filter {
 <p>If the event has field &#8220;somefield&#8221; == &#8220;hello&#8221; this filter, on success,
 would add field &#8220;foo_hello&#8221; if it is present, with the
 value above and the %{host} piece replaced with that value from the
-event. The second example would also add a hardcoded field. </p>
+event. The second example would also add a hardcoded field.</p>
 
 
 <h4> 
@@ -142,7 +138,7 @@ would add a tag &#8220;foo_hello&#8221; (and the second example would of course 
 <p>The destination field you wish to populate with the translated code. The default
 is a field named &#8220;translation&#8221;. Set this to the same value as source if you want
 to do a substitution, in this case filter will allways succeed. This will clobber
-the old value of the source field! </p>
+the old value of the source field!</p>
 
 
 <h4> 
@@ -224,7 +220,7 @@ will be also set to &#8220;bar&#8221;. However, if logstash receives an event wi
 set to &#8220;foofing&#8221;, the destination field will be set to &#8220;barfing&#8221;.</p>
 
 <p>Set both <code>exact =&gt; true</code> AND <code>regex =&gt; </code>true` if you would like to match using dictionary
-keys as regular expressions. A large dictionary could be expensive to match in this case. </p>
+keys as regular expressions. A large dictionary could be expensive to match in this case.</p>
 
 
 <h4> 
@@ -283,7 +279,7 @@ then the destination field would still be populated, but with the value of &#822
 </ul>
 
 <p>The name of the logstash event field containing the value to be compared for a
-match by the translate filter (e.g. &#8220;message&#8221;, &#8220;host&#8221;, &#8220;response_code&#8221;). </p>
+match by the translate filter (e.g. &#8220;message&#8221;, &#8220;host&#8221;, &#8220;response_code&#8221;).</p>
 
 <p>If this field is an array, only the first value will be used.</p>
 
@@ -406,7 +402,7 @@ filter {
 
 <p>If the event has field &#8220;somefield&#8221; == &#8220;hello&#8221; this filter, on success,
 would remove the tag &#8220;foo_hello&#8221; if it is present. The second example
-would remove a sad, unwanted tag as well. </p>
+would remove a sad, unwanted tag as well.</p>
 
 
 <h4> 
@@ -450,4 +446,4 @@ Optional.</p>
 
 <hr>
 
-This is documentation from <a href="https://github.com/logstash/logstash/blob/v1.4.2/lib/logstash/filters/translate.rb">lib/logstash/filters/translate.rb</a>                 <div class='clear'>                  </div>              </div>          </div>      </body>  </html> 
+This is documentation from <a href="https://github.com/logstash/logstash/blob/v1.4.5/lib/logstash/filters/translate.rb">lib/logstash/filters/translate.rb</a>                 <div class='clear'>                  </div>              </div>          </div>      </body>  </html> 
